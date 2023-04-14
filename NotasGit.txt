@@ -1,1 +1,34 @@
+ git init = Iniciar Git en carpeta local
+ git config user.name "" = Ingresar nombre de usuario
+ git config user.email "" = Ingresar el email del usuario
+ git remote add origin + 'link del repositorio' = Linkear los repositorios
+ git status = Nos indica el estado de Git y los archivos que no han sido commiteados
+ git add + 'nombre del archivo' = Se agrega el archivo de forma provicional, no completamente
+ git commit -m + 'mensaje' = Se utiliza para confirmar que el archivo se pasa de forma definitiva
+ git push origin(nombre del repo) master(nombre de la rama) 
+
+
+GIT CLONE & PULL 
+
+git clone + "URL del repositorio que se desea clonar"
+git pull origin(nombre del repo) master (rama que se esta usando) = Traer unicamente los cambios
+
+BRANCHES 
  
+Son líneas independientes de desarrollo; de la rama master nacen todas las demas
+
+git branch = Nos indica en que rama nos encuentra
+git branch rama1(nombre de la rama) = Crear una nueva rama
+git branch -m rama1(nombre inicial) Joseprada(nombre que se le desea poner) = Cambiar el nombre de la rama
+git checkout Joseprada(nombre de la rama) = Cambiar a la rama deseada
+git branch -d Joseprada(nombre de la rama) = ELiminar rama (No se puede hacer si estas dentro de la rama)-
+
+
+DIFF & MERGE
+
+DIFF = Conocer las diferencias entre dos ramas
+
+git diff master(primera rama que se quiere comparar) Joseprada(segundo archivo) = Comprar diferencias entre ramas
+
+MERGE = Unificar las dos ramas
+git merge ramaOrigen ramaDestino = (Debemos pararnos en la rama que va a recibir los cambios con git checkout)
